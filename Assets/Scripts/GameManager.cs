@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int Score { get; private set; }
+
+    [SerializeField] private TextMeshProUGUI scoreText; // <-- Add this
 
     private void Awake()
     {
@@ -24,8 +27,11 @@ public class GameManager : MonoBehaviour
         Score += value;
         Debug.Log("Current Score: " + Score);
 
-        // If you have a UIManager to update the on-screen text:
-        // UIManager.Instance.UpdateScoreText(Score);
+        // Update the on-screen score text
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {Score}";
+        }
     }
 }
 
