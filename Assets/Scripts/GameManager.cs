@@ -1,12 +1,12 @@
-// GameManager.cs
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
     public int Score { get; private set; }
 
-    void Awake()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -19,8 +19,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddScore(int points)
+    public void AddScore(int value)
     {
-        Score += points;
+        Score += value;
+        Debug.Log("Current Score: " + Score);
+
+        // If you have a UIManager to update the on-screen text:
+        // UIManager.Instance.UpdateScoreText(Score);
     }
 }
+
