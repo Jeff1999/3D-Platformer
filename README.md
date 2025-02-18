@@ -1,13 +1,13 @@
 # Simple 3D Platformer
 
-A basic third-person platformer developed in Unity as part of a studio assignment. The player can move, jump (with double jump), dash, and collect coins for points. Features include a free-look camera, an environment with platforms, and a score system that updates via UI.
+A basic third-person platformer developed in Unity as per Lab 3 for COSC 416: Game Development. The player can move, jump (with double jump), dash, and collect coins for points. Features include a free-look camera, an environment with platforms, and a score system that updates via UI.
 
 ---
 
 ## Demo Video
 
 Watch the gameplay demo here:  
-[**YouTube Demo Link**]()
+[**YouTube Demo Link**](https://youtu.be/QIQc7hd-BN0)
 
 ---
 
@@ -30,7 +30,7 @@ This project demonstrates a simple 3D platformer where the player navigates a se
   - You can jump again in mid-air for a double jump (resets on landing).
   
 - **Dash**  
-  - Press `Q` to dash forward for a short burst (cool-down handled by a timer).
+  - Press `Q` to dash forward for a short burst.
   
 - **Coins**  
   - Rotating coins placed on top of various boxes/platforms.  
